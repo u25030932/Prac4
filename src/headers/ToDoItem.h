@@ -18,7 +18,7 @@ public:
     virtual ~ToDoItem() = default;
 
 protected:
-    float estimatedCost_ = 0.0f;
+    float estimatedCost = 0.0f;
 };
 
 #endif
