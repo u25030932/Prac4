@@ -2,9 +2,10 @@
 #define TODOTASK_H
 
 #include "ToDoItem.h"
-#include "State.h"
 #include <string>
 using namespace std;
+
+class State;
 
 class ToDoTask : public ToDoItem
 {

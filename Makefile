@@ -4,7 +4,7 @@ CPP_DIR = $(SRC_DIR)/cpp
 BUILD_DIR = build
 
 CXX = g++
-CXXFLAGS = -Wall -Wextra -g -std=c++11 -I$(HEADER_DIR)
+CXXFLAGS = -Wall -Wextra -g -std=c++11 -I$(HEADER_DIR) -Wno-unused-parameter
 
 TARGET = $(BUILD_DIR)/main
 
