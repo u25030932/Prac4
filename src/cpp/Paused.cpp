@@ -26,7 +26,7 @@ void Paused::complete(ToDoTask* task)
 
 const string name = "Paused";
 
-const string& Paused::getName()
+string Paused::getName()
 {
 	return name;
 }

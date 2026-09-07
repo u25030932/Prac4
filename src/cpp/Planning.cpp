@@ -27,7 +27,7 @@ void Planning::complete(ToDoTask* task)
 
 const string name = "Planning";
 
-const string& Planning::getName()
+string Planning::getName()
 {
 	return name;
 }

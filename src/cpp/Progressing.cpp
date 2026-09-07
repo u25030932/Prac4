@@ -26,7 +26,7 @@ void Progressing::complete(ToDoTask* task)
 
 const string name = "Progressing";
 
-const string& Progressing::getName()
+string Progressing::getName()
 {
 	return name;
 }

@@ -10,12 +10,12 @@ class ItemIterator;
 class ToDoItem
 {
 public:
-    virtual const string& getDescription() const = 0;
-    virtual const string& getStatus() const = 0;
+    virtual string getDescription() const = 0;
+    virtual string getStatus() const = 0;
     virtual void execute() = 0;
     virtual int getPriority() const = 0;
     virtual float getEstimatedCost() const;
-    virtual ItemIterator *createIterator(const string &type) = 0;
+    virtual ItemIterator *createIterator(string type) = 0;
     
     virtual int getChildCount() const { return 0; }
     virtual ToDoItem *getChildAt(int index) const { return nullptr; }

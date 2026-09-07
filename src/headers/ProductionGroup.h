@@ -22,7 +22,7 @@ public:
     void execute() override;
     int getPriority() const override;
     float getEstimatedCost() const override;
-    ItemIterator *createIterator(const string &type) override;
+    ItemIterator *createIterator(string type) override;
 
     int getChildCount() const override;
     ToDoItem *getChildAt(int index) const override;
@@ -33,6 +33,6 @@ public:
 private:
     int calculateAggregatePriority() const;
     string calculateStatusSummary() const;
-}
+};
 
 #endif

@@ -2,7 +2,7 @@
 
 const string name = "Cancelled";
 
-const string& Cancelled::getName()
+string Cancelled::getName()
 {
 	return name;
 }
