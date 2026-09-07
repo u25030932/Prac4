@@ -2,7 +2,7 @@
 
 const string name = "Finished";
 
-const string& Finished::getName()
+string Finished::getName()
 {
 	return name;
 }
