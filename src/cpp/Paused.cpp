@@ -20,8 +20,7 @@ void Paused::cancel(ToDoTask* task)
 
 void Paused::complete(ToDoTask* task)
 {
-	cout << getName() << " Task " << task->getName() << " completed";
-	task->setState(new Finished());
+	cout << getName() << " Task " << task->getName() << " not completed - illegal transition";
 }
 
 const string name = "Paused";
