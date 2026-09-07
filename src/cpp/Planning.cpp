@@ -9,8 +9,7 @@ void Planning::start(ToDoTask* task)
 
 void Planning::pause(ToDoTask* task)
 {
-	cout << getName() << " Task " << task->getName() << " paused";
-	task->setState(new Paused());
+	cout << getName() << " Task " << task->getName() << " not paused - illegal transition";
 }
 
 void Planning::cancel(ToDoTask* task)
