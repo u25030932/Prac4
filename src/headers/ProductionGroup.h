@@ -29,6 +29,10 @@ public:
 
     void add(ToDoItem *item);
     void remove(ToDoItem *item);
+
+private:
+    int calculateAggregatePriority() const;
+    string calculateStatusSummary() const;
 }
 
 #endif
