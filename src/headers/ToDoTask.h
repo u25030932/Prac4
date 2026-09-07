@@ -16,27 +16,24 @@ private:
     string dueDate;
 
 public:
-    ToDoTask(const string &name, const string &decription, int priority = 0, const string &dueDate = "");
-    ~ToDoTask() = default;
+    ToDoTask(const string &name, const string &description, State *state, int priority = 0, const string &dueDate = "");
+    ~ToDoTask();
 
-    string getDescription() const override;
-    string getStatus() const override;
+    const string& getStatus() const override;
     void execute() override;
-    int getPriority() const override;
-    float getEstimatedCost() const override;
     ItemIterator* createIterator(const string& type) override;
 
     void start();
     void pause();
     void complete();
     void cancel();
-    void setState(State* newState);
-
-    void setPriority(int newPriority);
-    void setDueDate(const string& dueDate);
 
     const string& getName() const;
-    State* getState() const;
-}
+    const string& getDescription() const override;
+    const State* getState() const;
+    void setState(State* state);
+    int getPriority() const override;
+    const string& getDueDate() const;
+};
 
 #endif

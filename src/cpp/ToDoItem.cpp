@@ -1,6 +1,6 @@
-#include "ToDoItem.h"
+#include "../headers/ToDoItem.h"
 
 float ToDoItem::getEstimatedCost() const
 {
-    return estimatedCost;
+	return estimatedCost;
 }
