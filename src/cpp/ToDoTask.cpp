@@ -17,12 +17,12 @@ ToDoTask::ToDoTask(const string &name,
 		throw "state cannot be null";
 }
 
-const string& ToDoTask::getName() const
+string ToDoTask::getName() const
 {
 	return name;
 }
 
-const string& ToDoTask::getDescription() const 
+string ToDoTask::getDescription() const 
 {
 	return description;
 }
@@ -37,7 +37,7 @@ int ToDoTask::getPriority() const
 	return priority;
 }
 
-const string& ToDoTask::getDueDate() const
+string ToDoTask::getDueDate() const
 {
 	return dueDate;
 }
@@ -47,7 +47,7 @@ void ToDoTask::execute()
 	cout << "Task " << name << " is due " << dueDate << endl;
 }
 
-const string& ToDoTask::getStatus() const 
+string ToDoTask::getStatus() const 
 {
 	return state->getName();
 }
@@ -81,7 +81,7 @@ void ToDoTask::setState(State* state)
 		this->state = state;
 }
 
-ItemIterator* ToDoTask::createIterator(const string& type)
+ItemIterator* ToDoTask::createIterator(string type)
 {
 	return NULL; // implement this
 }

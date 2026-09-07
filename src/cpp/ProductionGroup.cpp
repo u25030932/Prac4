@@ -78,7 +78,7 @@ float ProductionGroup::getEstimatedCost() const
     return total;
 }
 
-ItemIterator *createIterator(const string &type)
+ItemIterator *ProductionGroup::createIterator(string type)
 {
     return nullptr; //To be done 
 }
