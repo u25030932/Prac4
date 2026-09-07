@@ -24,8 +24,11 @@ public:
     float getEstimatedCost() const override;
     ItemIterator *createIterator(const string &type) override;
 
-    void add(ToDoItem* item);
-    void remove(ToDoItem* item);
+    int getChildCount() const override;
+    ToDoItem *getChildAt(int index) const override;
+
+    void add(ToDoItem *item);
+    void remove(ToDoItem *item);
 }
 
 #endif
