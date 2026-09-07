@@ -13,12 +13,9 @@
 
 - [Overview](#overview)
 - [Pattern Implementation](#pattern-implementation)
-- [Build & Run](#build--run)
-- [Project Structure](#project-structure)
-- [Features](#features)
-- [Runtime Scenarios](#runtime-scenarios)
-- [Debugging](#debugging)
-- [Requirements Checklist](#requirements-checklist)
+- [Build & Run](#build--run) //for the docker
+- [Runtime Scenarios](#runtime-scenarios) //to do Kai and Anchen
+- [Debugging](#debugging) //GDB
 - [Team](#team)
 
 ---
@@ -78,9 +75,12 @@
 | Decorator | `TaskDecorator` | Abstract decorator base |
 | Concrete Decorators | `PriorityDecorator`, `CostAdjustmentDecorator` | Add runtime responsibilities |
 
-**Stacking Example:**
-```cpp
-// Stack multiple decorators
-ToDoItem* task = new ToDoTask("Color Grade", "...", 3);
-task = new PriorityDecorator(task, 10);        // Priority: 10
-task = new CostAdjustmentDecorator(task, 50);  // Cost: base + 50
+
+## The team:
+
+| Member | Name | Student Number|
+|--------|------|---------------|
+| 1 | Anchen Kruger | u25073703|
+| 2 |   |   |
+| 3 |   |   |
+
