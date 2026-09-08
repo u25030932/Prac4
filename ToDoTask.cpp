@@ -1,5 +1,5 @@
-#include "../headers/ToDoTask.h"
-#include "../headers/State.h"
+#include "ToDoTask.h"
+#include "State.h"
 #include <iostream>
 
 ToDoTask::ToDoTask(const string &name, 

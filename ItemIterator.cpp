@@ -1,4 +1,4 @@
-#include "../headers/ItemIterator.h"
+#include "ItemIterator.h"
 
 ItemIterator::~ItemIterator() {}
 

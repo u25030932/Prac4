@@ -1,5 +1,5 @@
-#include "../headers/ProductionGroup.h"
-#include "../headers/ItemIterator.h"
+#include "ProductionGroup.h"
+#include "ItemIterator.h"
 
 #include <iostream>
 #include <sstream>

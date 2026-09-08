@@ -1,4 +1,4 @@
-#include "../headers/TaskDecorator.h"
+#include "TaskDecorator.h"
 #include <iostream>
 #include <sstream>
 

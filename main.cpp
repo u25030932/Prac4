@@ -1,14 +1,14 @@
 
 #include <iostream>
 #include <string>
-#include "../headers/ToDoItem.h"
-#include "../headers/ToDoTask.h"
-#include "../headers/ProductionGroup.h"
-#include "../headers/TaskDecorator.h"
+#include "ToDoItem.h"
+#include "ToDoTask.h"
+#include "ProductionGroup.h"
+#include "TaskDecorator.h"
 // #include "PriorityDecorator.h"
 // #include "CostAdjustmentDecorator.h"
-#include "../headers/ItemIterator.h"
-#include "../headers/State.h"
+#include "ItemIterator.h"
+#include "State.h"
 
 using namespace std;
 

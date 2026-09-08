@@ -1,4 +1,4 @@
-#include "../headers/TaskDecorator.h"
+#include "TaskDecorator.h"
 
 TaskDecorator::TaskDecorator(ToDoItem* item) : element(item)
 {
