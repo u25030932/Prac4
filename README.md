@@ -82,6 +82,16 @@ sudo docker run docker_image
 | Decorator | `TaskDecorator` | Abstract decorator base |
 | Concrete Decorators | `PriorityDecorator`, `CostAdjustmentDecorator` | Add runtime responsibilities |
 
+### 🔍 Iterator Pattern
+
+| Participant | Class | Role |
+|-------------|-------|------|
+| Aggregate (factory method) | `ToDoItem::createIterator(type)` | Hands back the right concrete iterator without exposing internal storage |
+| Iterator | `ItemIterator` | Abstract base defining `next()` / `isDone()` / `currentItem()` |
+| Concrete Iterator | `StandardTraversalIterator` | Depth-first traversal of the entire structure, in call-sheet order |
+| Concrete Iterator | `EstimatedCostIterator` | Same structure, ordered by estimated cost — highest first |
+
+
 ## Debugging
 ```
 sudo docker run -it docker_image bash
@@ -89,11 +99,18 @@ valgrind ./main
 gdb ./main
 ```
 
+## 🎬 Runtime Scenarios
+
+### Scenario 1 — Morning Production Meeting
+Traverses the full shoot-day hierarchy two ways — structural order and cost order — proving both iterators coexist independently. A late task is added to Scene 14 mid-traversal; an already-open iterator is shown *not* to see it (snapshot policy), while a fresh iterator afterward does.
+
+### Scenario 2 — Stunt Task Scheduling Problem
+Follows one task through its full lifecycle, including an invalid transition (completing while paused). It's wrapped in two stacked decorators (priority, then cost) and used only through the base `ToDoItem` interface. It's later moved between groups — the decorated object, not the raw task, is what gets relocated, preserving single ownership.
+
 ## The team:
 
 | Member | Name | Student Number|
 |--------|------|---------------|
 | 1 | Anchen Kruger | u25073703|
 | 2 | Heinrich Klopper | u25030932 |
-| 3 |   |   |
-
+| 3 | kai  | fynn  | u25106725
