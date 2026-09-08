@@ -1,6 +1,6 @@
-#include "TaskDecorator.h"
+#include "../headers/TaskDecorator.h"
 
-TaskDecorator::TaskDecorator(ToDoItem* item) : element(item) 
+TaskDecorator::TaskDecorator(ToDoItem* item) : element(item)
 {
 	if (!item)
 		throw "item cannot be null";

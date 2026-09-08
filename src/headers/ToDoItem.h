@@ -16,7 +16,7 @@ public:
     virtual int getPriority() const = 0;
     virtual float getEstimatedCost() const;
     virtual ItemIterator *createIterator(string type) = 0;
-    
+    void setEstimatedCost(float cost);
     virtual int getChildCount() const { return 0; }
     virtual ToDoItem *getChildAt(int index) const { return nullptr; }
 

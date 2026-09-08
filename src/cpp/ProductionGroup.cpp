@@ -1,4 +1,6 @@
-#include "ProductionGroup.h"
+#include "../headers/ProductionGroup.h"
+#include "../headers/ItemIterator.h"
+
 #include <iostream>
 #include <sstream>
 #include <algorithm>
@@ -80,7 +82,12 @@ float ProductionGroup::getEstimatedCost() const
 
 ItemIterator *ProductionGroup::createIterator(string type)
 {
-    return nullptr; //To be done 
+    if (type =="COST"){
+        return new EstimatedCostIterator(this);
+    }else{
+        return new StandardTraversalIterator(this);
+
+    }
 }
 
 int ProductionGroup::getChildCount() const
