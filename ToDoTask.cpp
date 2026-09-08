@@ -83,7 +83,11 @@ void ToDoTask::setState(State* state)
 
 ItemIterator* ToDoTask::createIterator(string type)
 {
-	return NULL; // implement this
+	if (type == "COST"){
+		return new EstimatedCostIterator(this);
+	}else if (type == "STANDARD"){
+		return new StandardTraversalIterator(this);
+	}
 }
 
 ToDoTask::~ToDoTask()
