@@ -13,9 +13,9 @@
 
 - [Overview](#overview)
 - [Pattern Implementation](#pattern-implementation)
-- [Build & Run](#build--run) //for the docker
+- [Build & Run](#build--run)
 - [Runtime Scenarios](#runtime-scenarios) //to do Kai and Anchen
-- [Debugging](#debugging) //GDB
+- [Debugging](#debugging)
 - [Team](#team)
 
 ---
@@ -51,6 +51,13 @@
 - Uniform treatment of individual tasks and groups
 - Child management (add/remove/getChildCount/getChildAt)
 
+
+## Build & Run
+```
+sudo docker build -t docker_image .
+sudo docker run docker_image
+```
+
 ### 🔄 State Pattern
 
 | Participant | Class | Role |
@@ -75,12 +82,18 @@
 | Decorator | `TaskDecorator` | Abstract decorator base |
 | Concrete Decorators | `PriorityDecorator`, `CostAdjustmentDecorator` | Add runtime responsibilities |
 
+## Debugging
+```
+sudo docker run -it docker_image bash
+valgrind ./main
+gdb ./main
+```
 
 ## The team:
 
 | Member | Name | Student Number|
 |--------|------|---------------|
 | 1 | Anchen Kruger | u25073703|
-| 2 |   |   |
+| 2 | Heinrich Klopper | u25030932 |
 | 3 |   |   |
 
