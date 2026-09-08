@@ -1,5 +1,6 @@
 #include "ToDoTask.h"
 #include "State.h"
+#include "ItemIterator.h"
 #include <iostream>
 
 ToDoTask::ToDoTask(const string &name, 

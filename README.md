@@ -113,4 +113,4 @@ Follows one task through its full lifecycle, including an invalid transition (co
 |--------|------|---------------|
 | 1 | Anchen Kruger | u25073703|
 | 2 | Heinrich Klopper | u25030932 |
-| 3 | kai  | fynn  | u25106725
+| 3 | Kai Fynn  | u25106725 |
